@@ -1,0 +1,7 @@
+{
+  "name": "thera-timer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
