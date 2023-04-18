@@ -1,14 +1,14 @@
 <ion-content [fullscreen]="true">
   <main class="content">
     <img class="logo" src="assets/imgs/logo.svg" alt="Logo Thera">
-    <form class="login-form" action="">
+    <form class="login-form" (ngSubmit)="login()">
       <div class="input-container">
         <img class="input-icon" src="assets/icon/user.svg" alt="user-icon">
-        <input type="email" placeholder="Usuário">
+        <input type="email" name="username" placeholder="Usuário" [(ngModel)]="username">
       </div>
       <div class="input-container">
         <img class="input-icon" src="assets/icon/key.svg" alt="user-icon">
-        <input type="password" placeholder="Senha">
+        <input type="password" name="password" placeholder="Senha" [(ngModel)]="password">
       </div>
       <button class="btn-submit" type="submit">LOGIN</button>
     </form>
